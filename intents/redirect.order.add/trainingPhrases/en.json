@@ -1,0 +1,209 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "order food items",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "order snacks",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "also please add "
+    }, {
+      "text": "2",
+      "parameterId": "quantity"
+    }, {
+      "text": " more "
+    }, {
+      "text": "samosa",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " to the order and "
+    }, {
+      "text": "two",
+      "parameterId": "quantity"
+    }, {
+      "text": " "
+    }, {
+      "text": "boli",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "oh yes, add ",
+      "auto": true
+    }, {
+      "text": "one",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "chat",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "three",
+      "parameterId": "quantity"
+    }, {
+      "text": " "
+    }, {
+      "text": "lava cake",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "in addition, add ",
+      "auto": true
+    }, {
+      "text": "1",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "friech fries",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "3",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "french fries",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": ", "
+    }, {
+      "text": "2",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "samosa",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and "
+    }, {
+      "text": "one",
+      "parameterId": "quantity"
+    }, {
+      "text": " "
+    }, {
+      "text": "lassi",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i need ",
+      "auto": true
+    }, {
+      "text": "8",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "ladoos",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can i have ",
+      "auto": true
+    }, {
+      "text": "4",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "boli",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " please",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i would like to order "
+    }, {
+      "text": "1",
+      "parameterId": "quantity"
+    }, {
+      "text": " "
+    }, {
+      "text": "masala puri",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Give me "
+    }, {
+      "text": "2",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "samosa",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and "
+    }, {
+      "text": "1",
+      "parameterId": "quantity"
+    }, {
+      "text": " "
+    }, {
+      "text": "lassi",
+      "parameterId": "snackitems"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

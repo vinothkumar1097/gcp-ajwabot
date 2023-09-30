@@ -1,0 +1,12 @@
+{
+  "name": "e6b7c03b-cfbf-49df-8ec6-a774740ba13f",
+  "displayName": "redirect.order.remove",
+  "parameters": [ {
+    "id": "snackitems",
+    "entityType": "@snackitems",
+    "isList": true
+  } ],
+  "priority": 500000,
+  "description": "remove items from the order",
+  "numTrainingPhrases": 8
+}

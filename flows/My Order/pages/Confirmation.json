@@ -1,0 +1,44 @@
+{
+  "name": "521712ac-b3e5-415a-a723-179a542a0939",
+  "displayName": "Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Are you sure you want to cancel your order #$session.params.ordernumber" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I have cancelled your order." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "ordernumber",
+        "value": null
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "08fe82b4-127a-4c5a-8bb1-f835ef223242"
+  }, {
+    "intent": "confirm.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got It." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "e086ac90-1ae3-4bd1-986a-22d400c17db6"
+  } ]
+}

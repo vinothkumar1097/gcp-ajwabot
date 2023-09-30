@@ -1,0 +1,68 @@
+{
+  "name": "14cdfa3a-14a6-4ab5-944f-c0a22c7e04ff",
+  "displayName": "My Order",
+  "description": "user can track or cancel their orders",
+  "transitionRoutes": [ {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "6fb0dfee-5880-4850-b1be-2f94194907a4"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "c27853dd-61a3-4765-ab9a-f75bb4dd698a"
+  }, {
+    "intent": "redirect.my.order.track",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Track order",
+    "name": "0246ac45-ca37-434c-a6c9-2ccd192f5947"
+  }, {
+    "intent": "redirect.my.order.cancel",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancel order",
+    "name": "3d82c675-503b-490f-85df-db95c852fb61"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "309bdf0e-2b78-4b7e-a56b-eec077cbe236"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "212ca029-b7dd-4d2b-85f8-e47a5ddda3b6"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  }
+}

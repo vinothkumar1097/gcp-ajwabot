@@ -1,0 +1,69 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "i want to track status of my order",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "track my order "
+    }, {
+      "text": "ABD1234",
+      "parameterId": "ordernumber"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "status of my food order ",
+      "auto": true
+    }, {
+      "text": "wed0230",
+      "parameterId": "ordernumber",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when will i recieve my item",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my order status",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "status of my order ",
+      "auto": true
+    }, {
+      "text": "abd2340",
+      "parameterId": "ordernumber",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My order is ",
+      "auto": true
+    }, {
+      "text": "ABC1234",
+      "parameterId": "ordernumber",
+      "auto": true
+    }, {
+      "text": ", what is the status?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

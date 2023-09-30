@@ -1,0 +1,52 @@
+{
+  "name": "0497b24a-6e32-422c-b6f0-51855192437a",
+  "displayName": "Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Shall I proceed with your order ? Or do you want to add or remove items from cart." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.proceed.order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Let me proceed with your order" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Your order number is ABC1234" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "05ecd317-25d5-4f13-bd7b-fefe35a80815"
+  }, {
+    "intent": "decline.proceed.order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure! I have cancelled the order" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "snackitems",
+        "value": null
+      }, {
+        "parameter": "quantity",
+        "value": null
+      } ]
+    },
+    "targetPage": "Anything Else",
+    "name": "31b10376-69df-4711-82d1-4a628ad68676"
+  } ]
+}

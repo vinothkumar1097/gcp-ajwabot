@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "samosa",
+    "synonyms": [ "samosa" ],
+    "languageCode": "en"
+  }, {
+    "value": "lassi",
+    "synonyms": [ "lassi", "lazi", "Lazzi", "yogurt", "yogurt milk" ],
+    "languageCode": "en"
+  }, {
+    "value": "chat",
+    "synonyms": [ "chat", "chat masala", "masala poori", "masala puri" ],
+    "languageCode": "en"
+  }, {
+    "value": "boli",
+    "synonyms": [ "boli", "bolli", "poli" ],
+    "languageCode": "en"
+  }, {
+    "value": "laddu",
+    "synonyms": [ "laddoo", "laddu", "ladoo" ],
+    "languageCode": "en"
+  }, {
+    "value": "lava cake",
+    "synonyms": [ "cake", "lava cake", "lawa cake" ],
+    "languageCode": "en"
+  }, {
+    "value": "french fries",
+    "synonyms": [ "french fries", "french fryes", "fries", "potato fries" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "af8de0a6-fa78-4a9e-ae76-007345c6c227",
+  "displayName": "FAQ.Snacks",
+  "transitionRoutes": [ {
+    "intent": "faq.locations",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ajwa was started in 2020. We are located in Chennai, Hyderabad, Bangalore." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "67e2f5c9-f356-4f4a-9c59-57a3d9e62ca7"
+  }, {
+    "intent": "faq.timing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We are open from 8 AM to 7 PM. We are closed on Sundays." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "fe8f2c9c-41f4-41bc-b029-db1efa0cce83"
+  } ]
+}

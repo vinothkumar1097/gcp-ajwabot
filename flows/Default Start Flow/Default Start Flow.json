@@ -1,0 +1,131 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome, I am the virtual agent of Ajwa. You can order snacks, track your order status or cancel your order. How can I help?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "options": [ {
+              "text": "Order Snacks"
+            }, {
+              "text": "Track Order"
+            }, {
+              "text": "Cancel Order"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0464a299-2f83-4d7d-8dd8-875e9971d543"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting Ajwa! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "d8951b1c-1ca3-4dfa-8212-b1c06b6c4a2b"
+  }, {
+    "intent": "redirect.snacks.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Order Snacks",
+    "name": "65d458d0-3458-4338-9df9-956aa87285be"
+  }, {
+    "intent": "redirect.order.add",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Order Snacks",
+    "name": "c090f9b6-8757-4efe-bdc4-a6904500c12a"
+  }, {
+    "intent": "redirect.order.remove",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Order Snacks",
+    "name": "9d1fe515-9503-4b97-94b5-fc5a54a04c87"
+  }, {
+    "intent": "redirect.my.order.track",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "ec892b10-de92-4ede-a494-34dfd661bd33"
+  }, {
+    "intent": "redirect.my.order.cancel",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "0005f704-1ebc-4576-bd2a-74736dc92539"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome, I am the virtual agent of Ajwa. You can order snacks, track your order status or cancel your order. How can I help?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "options": [ {
+              "text": "Order Snacks"
+            }, {
+              "text": "Track Order"
+            }, {
+              "text": "Cancel Order"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "edbda960-8a05-4e99-b88c-c5cfdda790ff"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6e8d6adf-078a-4178-b0bb-aba715e6fb3b"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "28091e95-71c1-4f02-85ad-70f9c8afb750"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

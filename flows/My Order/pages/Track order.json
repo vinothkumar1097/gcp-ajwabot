@@ -1,0 +1,61 @@
+{
+  "name": "cb97aec0-a525-4a21-adca-59784aec67b3",
+  "displayName": "Track order",
+  "form": {
+    "parameters": [ {
+      "displayName": "ordernumber",
+      "required": true,
+      "entityType": "@ordernumber",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your order number ? For example, ABC1234" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. Can you please share your order number again." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5aae0dbd-4f59-432f-a574-91873d6ee903"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't understand that. Can you please share your order number again." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "da480298-07d7-4bf1-aa8f-dd8df08f7478"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "let me check. please give me a moment." ]
+        },
+        "languageCode": "en"
+      } ],
+      "webhook": "Ajwa_Webhook",
+      "tag": "track_order",
+      "returnPartialResponses": true
+    },
+    "targetPage": "Anything Else",
+    "name": "bb594884-104f-4e9c-8cfd-834025b9b4b2"
+  } ]
+}

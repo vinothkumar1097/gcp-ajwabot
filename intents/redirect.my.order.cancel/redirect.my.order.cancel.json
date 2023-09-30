@@ -1,0 +1,14 @@
+{
+  "name": "97324191-6292-45f7-a625-7ad59caf5151",
+  "displayName": "redirect.my.order.cancel",
+  "parameters": [ {
+    "id": "ordernumber",
+    "entityType": "@ordernumber"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "numTrainingPhrases": 7
+}

@@ -1,0 +1,47 @@
+{
+  "name": "5e9b64ab-d7ad-4a27-9afb-9d4aeec0a33a",
+  "displayName": "Anything Else",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Is there anything else ?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "snackitems",
+      "value": null
+    }, {
+      "parameter": "quantity",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure. How can I help you with?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "7bc40f31-99db-4df5-9382-d835abba1ad4"
+  }, {
+    "intent": "confirm.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting Ajwa! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "59f4216a-63f0-4554-a833-0a19459a6ad0"
+  } ]
+}

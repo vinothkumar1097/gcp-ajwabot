@@ -1,0 +1,42 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "do we have ",
+      "auto": true
+    }, {
+      "text": "ajwa",
+      "auto": true
+    }, {
+      "text": " in ",
+      "auto": true
+    }, {
+      "text": "chennai",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "ajwa",
+      "auto": true
+    }, {
+      "text": " locations",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where ",
+      "auto": true
+    }, {
+      "text": "ajwa",
+      "auto": true
+    }, {
+      "text": " is located",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

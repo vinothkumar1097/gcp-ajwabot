@@ -1,0 +1,53 @@
+{
+  "name": "249a6ef9-6233-4418-9024-2847d2e88ac4",
+  "displayName": "Cancel order",
+  "form": {
+    "parameters": [ {
+      "displayName": "ordernumber",
+      "required": true,
+      "entityType": "@ordernumber",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "what is your order number? For example, ABD1234" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. Can you share your order number again." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "beee32d4-4182-4b6b-82bd-3e3f2a8e7ff1"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "i didn't understand that. can i have your order number again." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4da9a4f0-9d6f-40a9-82c2-3393e59be0c6"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "cb6e1230-25c3-4fd8-a3a5-22657a496dd7"
+  } ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "c0f8a18e-c3a2-46b1-9eb4-afe816f39917",
+  "displayName": "Order",
+  "form": {
+    "parameters": [ {
+      "displayName": "snackitems",
+      "required": true,
+      "entityType": "@snackitems",
+      "isList": true,
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What snacks you want to order. we have samosa, lassi, chat, boli, laddu, lava cake, french fries. Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. what snacks you need. we have samosa, lassi, chat, boli, laddu, lava cake, french fries. Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3763c2c7-0924-4e2e-b121-4d32e71d2c6a"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't understand that. what snacks you need. we have samosa, lassi, chat, boli, laddu, lava cake, french fries. Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8def5c0f-a53e-49e9-ae18-98592fb92206"
+        } ]
+      }
+    }, {
+      "displayName": "quantity",
+      "required": true,
+      "entityType": "@sys.number",
+      "isList": true,
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "can you say the quantity you need. Something like \"I want two samosa and one lassi\"." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. can you say the quantity you need. Something like \"I want two samosa and one lassi\"" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "e5686431-6a58-41dd-adec-602d42976e8c"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I didn't understand that. can you say the quantity you need. Something like \"I want two samosa and one lassi\"" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "22a46fde-0c9c-46ec-9518-2195e5d5ec68"
+        } ]
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "7a62b14c-6cdf-49fe-b928-f1fdbc330333"
+  } ],
+  "transitionRouteGroups": [ "FAQ.Snacks" ]
+}

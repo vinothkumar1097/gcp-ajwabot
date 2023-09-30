@@ -1,0 +1,20 @@
+{
+  "name": "3f0936b3-ec03-495f-9655-b739b86653e1",
+  "displayName": "redirect.order.add",
+  "parameters": [ {
+    "id": "quantity",
+    "entityType": "@sys.number",
+    "isList": true
+  }, {
+    "id": "snackitems",
+    "entityType": "@snackitems",
+    "isList": true
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "order snacks",
+  "numTrainingPhrases": 11
+}

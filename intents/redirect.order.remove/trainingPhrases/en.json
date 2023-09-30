@@ -1,0 +1,115 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "remove snacks from the order",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "remove item from the order",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can you remove ",
+      "auto": true
+    }, {
+      "text": "lassi",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and ",
+      "auto": true
+    }, {
+      "text": "boli",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "please take "
+    }, {
+      "text": "cake",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " from the order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "delete ",
+      "auto": true
+    }, {
+      "text": "laddu",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " from my order",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "remove ",
+      "auto": true
+    }, {
+      "text": "french fries",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Kindly ",
+      "auto": true
+    }, {
+      "text": "take"
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "chat",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and ",
+      "auto": true
+    }, {
+      "text": "fries",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " off the order, please.",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "No "
+    }, {
+      "text": "lassi",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and "
+    }, {
+      "text": "samosa",
+      "parameterId": "snackitems"
+    }, {
+      "text": " in my order. please remove."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

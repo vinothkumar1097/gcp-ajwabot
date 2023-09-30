@@ -1,0 +1,72 @@
+{
+  "name": "4a5751e4-9aa5-4abb-b1f3-53d7d4d31f9a",
+  "displayName": "Order Snacks",
+  "transitionRoutes": [ {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "4b7b0a16-1c4e-4de1-88a8-1ba88d438280"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "88e54af2-21fc-48e3-b414-f8f8f223595a"
+  }, {
+    "intent": "redirect.snacks.overview",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We sell samosa, lassi, chat, boli, laddu, lava cake and french fries. Say something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "20c8e35a-1a78-4901-b472-f65b0bee15ca"
+  }, {
+    "intent": "redirect.order.add",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order",
+    "name": "1b309a7f-f3e4-4a62-9a53-e0dcdcfe069a"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "93c08113-1517-443c-9f6d-6929da01ade9"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "17515ea3-f68b-4de5-9410-381913f4eec8"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  }
+}

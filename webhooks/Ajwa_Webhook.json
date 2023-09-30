@@ -1,0 +1,10 @@
+{
+  "name": "3ab05f53-fa0c-4da2-8438-5b70190e470b",
+  "displayName": "Ajwa_Webhook",
+  "genericWebService": {
+    "uri": "https://us-central1-maximal-kingdom-400214.cloudfunctions.net/ajwa-webhook-dev"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}
