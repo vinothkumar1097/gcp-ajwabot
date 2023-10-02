@@ -1,6 +1,29 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "yes order",
+      "auto": true
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "ok",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "yes ",
+      "auto": true
+    }, {
+      "text": "goahead"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "yes please",
       "auto": true
     } ],
@@ -33,13 +56,6 @@
   }, {
     "parts": [ {
       "text": "go ahead",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
-      "text": "yes order",
       "auto": true
     } ],
     "repeatCount": 1,

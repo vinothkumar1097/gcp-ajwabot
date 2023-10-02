@@ -13,6 +13,26 @@
       }
     },
     "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Order",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Order"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   redirect.order.add",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "redirect.order.add"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "snacks or quantities are mismatching.we only have samosa, lassi, chat, boli, laddu, lava cake, french fries."
+      } ],
       "triggeredIntent": {
         "name": "redirect.order.add"
       },
@@ -21,9 +41,9 @@
         "flow": "Order Snacks"
       },
       "textResponses": [ {
-        "text": [ "Quantities are mismatching" ]
+        "text": [ "snacks or quantities are mismatching." ]
       }, {
-        "text": [ "Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+        "text": [ "we only have samosa, lassi, chat, boli, laddu, lava cake, french fries." ]
       } ],
       "currentFlow": {
         "name": "Order Snacks"
@@ -40,14 +60,28 @@
       }
     },
     "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Order",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Order"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "snacks or quantities are mismatching.we only have samosa, lassi, chat, boli, laddu, lava cake, french fries."
+      } ],
       "currentPage": {
         "name": "Order",
         "flow": "Order Snacks"
       },
       "textResponses": [ {
-        "text": [ "Quantities are mismatching" ]
+        "text": [ "snacks or quantities are mismatching." ]
       }, {
-        "text": [ "Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+        "text": [ "we only have samosa, lassi, chat, boli, laddu, lava cake, french fries." ]
       } ],
       "currentFlow": {
         "name": "Order Snacks"
@@ -64,6 +98,26 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "cart_amount": 105,
+        "isCartValid": true,
+        "quantity": [ 1, 2 ],
+        "snackitems": [ "lassi", "french fries" ]
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Confirmation",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Confirmation"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "lassi (1 * ₹25)\nfrench fries (2 * ₹40)\n\nTotal cart amount is 105 rupees. Shall I continue to order ?"
+      } ],
       "currentPage": {
         "name": "Confirmation",
         "flow": "Order Snacks"
@@ -86,28 +140,26 @@
       }
     },
     "virtualAgentOutput": {
-      "currentPage": {
-        "name": "Confirmation",
-        "flow": "Order Snacks"
-      },
-      "textResponses": [ {
-        "text": [ "Sorry, can you say that again?" ]
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Anything Else",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Anything Else"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   decline.proceed.order",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "decline.proceed.order"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Sure! I have cancelled the orderIs there anything else ?"
       } ],
-      "currentFlow": {
-        "name": "Order Snacks"
-      }
-    }
-  }, {
-    "userInput": {
-      "isWebhookEnabled": true,
-      "input": {
-        "text": {
-          "text": "cancel order"
-        },
-        "languageCode": "en"
-      }
-    },
-    "virtualAgentOutput": {
       "triggeredIntent": {
         "name": "decline.proceed.order"
       },
@@ -135,6 +187,26 @@
       }
     },
     "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   End Session",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "End Session"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   confirm.no",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "confirm.no"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Thank you for contacting Ajwa! Have a nice day!"
+      } ],
       "triggeredIntent": {
         "name": "confirm.no"
       },

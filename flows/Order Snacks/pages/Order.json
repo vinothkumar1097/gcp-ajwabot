@@ -11,7 +11,7 @@
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+              "text": [ "we only have samosa, lassi, chat, boli, laddu, lava cake, french fries." ]
             },
             "languageCode": "en"
           } ]

@@ -32,7 +32,7 @@
   "customPayloadTemplates": [ {
     "displayName": "main menu",
     "payload": {
-      "richContent": [ {
+      "richContent": [ [ {
         "options": [ {
           "text": "Order Snacks"
         }, {
@@ -41,7 +41,7 @@
           "text": "Cancel Order"
         } ],
         "type": "chips"
-      } ]
+      } ] ]
     }
   } ],
   "textToSpeechSettings": {

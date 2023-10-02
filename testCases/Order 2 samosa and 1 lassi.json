@@ -63,6 +63,12 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "cart_amount": 45,
+        "isCartValid": true,
+        "quantity": [ 2, 1 ],
+        "snackitems": [ "samosa", "lassi" ]
+      },
       "triggeredIntent": {
         "name": "redirect.order.add"
       },
@@ -88,6 +94,12 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "cart_amount": 45,
+        "isCartValid": true,
+        "quantity": [ 2, 1 ],
+        "snackitems": [ "samosa", "lassi" ]
+      },
       "triggeredIntent": {
         "name": "confirm.proceed.order"
       },
@@ -115,6 +127,15 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "cart_amount": 45,
+        "isCartValid": true,
+        "name": {
+          "original": "vinoth"
+        },
+        "quantity": [ 2, 1 ],
+        "snackitems": [ "samosa", "lassi" ]
+      },
       "currentPage": {
         "name": "Collect Info",
         "flow": "Order Process"
@@ -137,6 +158,16 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "cart_amount": 45,
+        "isCartValid": true,
+        "mobile": "7200745516",
+        "name": {
+          "original": "vinoth"
+        },
+        "quantity": [ 2, 1 ],
+        "snackitems": [ "samosa", "lassi" ]
+      },
       "currentPage": {
         "name": "Collect Info",
         "flow": "Order Process"
@@ -159,6 +190,16 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "cart_amount": 45,
+        "isCartValid": true,
+        "mobile": "7200745516",
+        "name": {
+          "original": "vinoth"
+        },
+        "quantity": [ 2, 1 ],
+        "snackitems": [ "samosa", "lassi" ]
+      },
       "currentPage": {
         "name": "Collect Info",
         "flow": "Order Process"
@@ -181,6 +222,17 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "address": "vyasarpadi market",
+        "cart_amount": 45,
+        "isCartValid": true,
+        "mobile": "7200745516",
+        "name": {
+          "original": "vinoth"
+        },
+        "quantity": [ 2, 1 ],
+        "snackitems": [ "samosa", "lassi" ]
+      },
       "currentPage": {
         "name": "Payment details",
         "flow": "Order Process"
