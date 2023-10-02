@@ -1,0 +1,28 @@
+{
+  "name": "857c8184-6c8c-445f-af2a-7b0486b916f9",
+  "displayName": "redirect.order.addremove",
+  "parameters": [ {
+    "id": "addquantity",
+    "entityType": "@sys.number",
+    "isList": true
+  }, {
+    "id": "addsnack",
+    "entityType": "@snackitems",
+    "isList": true
+  }, {
+    "id": "removequantity",
+    "entityType": "@sys.number",
+    "isList": true
+  }, {
+    "id": "removesnack",
+    "entityType": "@snackitems",
+    "isList": true
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "user can add or remove snacks",
+  "numTrainingPhrases": 7
+}

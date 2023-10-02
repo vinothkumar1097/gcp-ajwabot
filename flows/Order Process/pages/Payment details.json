@@ -1,0 +1,53 @@
+{
+  "name": "029b7ca7-5b80-45f5-9b0b-5a003e37c0ad",
+  "displayName": "Payment details",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Delivery costs an additional 30 rupees. This will make the total cost $sys.func.TO_TEXT($sys.func.ADD($session.params.cart_amount, 30)) rupees.\n\nYour order will be delivered to:\n$session.params.name\n$session.params.address\n\nTo continue the order process please explicitly say \"I confirm\". Do you want to confirm your order?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.proceed.order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for your order!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Here's the order number: ABC1032. You can pay at the time of delivery through gpay or cash. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "back2flow",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "9777b981-1e40-49dd-bda3-80418d3a40e0"
+  }, {
+    "intent": "decline.proceed.order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your order has been cancelled." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "back2flow",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "be6d505a-47a7-4cf7-ba21-d1baaa676f56"
+  } ]
+}

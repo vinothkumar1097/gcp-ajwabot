@@ -1,0 +1,153 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "include ",
+      "auto": true
+    }, {
+      "text": "3",
+      "parameterId": "addquantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "boli",
+      "parameterId": "addsnack",
+      "auto": true
+    }, {
+      "text": " and exclude ",
+      "auto": true
+    }, {
+      "text": "lazzi",
+      "parameterId": "removesnack"
+    }, {
+      "text": " from the order",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "remove ",
+      "auto": true
+    }, {
+      "text": "fries",
+      "parameterId": "removesnack"
+    }, {
+      "text": " and additionally add ",
+      "auto": true
+    }, {
+      "text": "one",
+      "parameterId": "addquantity",
+      "auto": true
+    }, {
+      "text": " more ",
+      "auto": true
+    }, {
+      "text": "laddu",
+      "parameterId": "addsnack",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "remove ",
+      "auto": true
+    }, {
+      "text": "lazzi",
+      "parameterId": "removesnack"
+    }, {
+      "text": " from the order",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "remove ",
+      "auto": true
+    }, {
+      "text": "lava cake",
+      "parameterId": "removesnack"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "i want ",
+      "auto": true
+    }, {
+      "text": "3",
+      "parameterId": "addquantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "french fries",
+      "parameterId": "addsnack",
+      "auto": true
+    }, {
+      "text": " and remove that ",
+      "auto": true
+    }, {
+      "text": "samosa",
+      "parameterId": "removesnack"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add "
+    }, {
+      "text": "one",
+      "parameterId": "addquantity",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "french fries",
+      "parameterId": "addsnack",
+      "auto": true
+    }, {
+      "text": " and remove "
+    }, {
+      "text": "2",
+      "parameterId": "removequantity"
+    }, {
+      "text": " "
+    }, {
+      "text": "lassi",
+      "parameterId": "removesnack"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "order "
+    }, {
+      "text": "2",
+      "parameterId": "addquantity",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "samosa",
+      "parameterId": "addsnack",
+      "auto": true
+    }, {
+      "text": " and "
+    }, {
+      "text": "1",
+      "parameterId": "addquantity"
+    }, {
+      "text": " "
+    }, {
+      "text": "lazzi",
+      "parameterId": "addsnack"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,137 @@
+{
+  "name": "a8a95b27-f353-44e5-a34c-203888eceebc",
+  "displayName": "Collect Info",
+  "form": {
+    "parameters": [ {
+      "displayName": "name",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What's your name?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry I missed that. What's the name?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fa37a5fa-4c15-4616-8313-c469f90490a9"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand. What's the name?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "542a2a46-b8eb-46c2-8993-04cdb1903a3f"
+        } ]
+      },
+      "redact": true
+    }, {
+      "displayName": "mobile",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "what's your 10 digit mobile number" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry I missed that. what's your 10 digit mobile number" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7c49d219-dd98-4018-a8f9-b4253daf86ff"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry I didn't understand. what's your 10 digit mobile number" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7658133f-2c11-4faa-9a30-a82edd907679"
+        } ]
+      },
+      "redact": true
+    }, {
+      "displayName": "address",
+      "required": true,
+      "entityType": "@sys.address",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "what's your address" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. what's the address?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b906d949-0324-4327-81d4-84bcbcaeacf9"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand. what's the address?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4d93a2b0-46d2-4043-af06-d532b512bbe0"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "To complete your order, I need your name, mobile and address" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Payment details",
+    "name": "b83525a7-b92d-46db-b9a4-11dae6181059"
+  } ]
+}

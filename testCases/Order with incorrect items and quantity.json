@@ -1,0 +1,161 @@
+{
+  "name": "261ba94e-091e-439c-ba58-9a6457a56223",
+  "tags": [ "#invalid-order,", "#webhook-trigger" ],
+  "displayName": "Order with incorrect items and quantity",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "order lassi and 2 fries"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.order.add"
+      },
+      "currentPage": {
+        "name": "Order",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "Quantities are mismatching" ]
+      }, {
+        "text": [ "Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "order lassi and 2 fries"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Order",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "Quantities are mismatching" ]
+      }, {
+        "text": [ "Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "order 1  lassi and 2 fries"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirmation",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "lassi (1 * ₹25)\nfrench fries (2 * ₹40)\n\nTotal cart amount is 105 rupees. Shall I continue to order ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirmation",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "Sorry, can you say that again?" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "cancel order"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "decline.proceed.order"
+      },
+      "currentPage": {
+        "name": "Anything Else",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "Sure! I have cancelled the order" ]
+      }, {
+        "text": [ "Is there anything else ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.no"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for contacting Ajwa! Have a nice day!" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1696174785,
+    "nanos": 705924000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

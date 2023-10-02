@@ -2,7 +2,7 @@
   "name": "3ab05f53-fa0c-4da2-8438-5b70190e470b",
   "displayName": "Ajwa_Webhook",
   "genericWebService": {
-    "uri": "https://us-central1-maximal-kingdom-400214.cloudfunctions.net/ajwa-webhook-dev"
+    "uri": "https://7a8a-49-37-210-192.ngrok-free.app"
   },
   "timeout": {
     "seconds": 5

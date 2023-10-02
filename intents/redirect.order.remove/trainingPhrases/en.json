@@ -1,6 +1,68 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "not interested in ",
+      "auto": true
+    }, {
+      "text": "fries",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "dont want ",
+      "auto": true
+    }, {
+      "text": "lassi",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "please remove ",
+      "auto": true
+    }, {
+      "text": "boli",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "exclude "
+    }, {
+      "text": "2",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "lassi",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and "
+    }, {
+      "text": "1",
+      "parameterId": "number"
+    }, {
+      "text": " "
+    }, {
+      "text": "boli",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " from the order"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "remove snacks from the order",
       "auto": true
     } ],

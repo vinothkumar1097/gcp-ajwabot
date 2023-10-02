@@ -5,14 +5,22 @@
   "transitionRoutes": [ {
     "intent": "redirect.home",
     "triggerFulfillment": {
-    
+      "setParameterActions": [ {
+        "parameter": "restart",
+        "value": true
+      } ]
     },
     "targetPage": "End Flow",
     "name": "6fb0dfee-5880-4850-b1be-2f94194907a4"
   }, {
     "intent": "redirect.end",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting Ajwa! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
     },
     "targetPage": "End Session",
     "name": "c27853dd-61a3-4765-ab9a-f75bb4dd698a"

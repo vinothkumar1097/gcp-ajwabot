@@ -23,5 +23,27 @@
       } ]
     },
     "name": "fe8f2c9c-41f4-41bc-b029-db1efa0cce83"
+  }, {
+    "intent": "faq.snacks.overview",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We sell samosa, lassi, chat, boli, laddu, lava cake and french fries. Say something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a3c1c815-bb27-464c-9159-2a2dbf0637bb"
+  }, {
+    "intent": "faq.payment",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Currently GPay and Cash on delivery is supported. We are working with payment providers to enable to Paytm and other transaction methods." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "329ec47c-1435-46af-a5c3-15564aa25624"
   } ]
 }

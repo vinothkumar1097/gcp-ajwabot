@@ -1,6 +1,133 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "order ",
+      "auto": true
+    }, {
+      "text": "1",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "lazzi",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " to the ",
+      "auto": true
+    }, {
+      "text": "cart"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add ",
+      "auto": true
+    }, {
+      "text": "3",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "laddu",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " to the ",
+      "auto": true
+    }, {
+      "text": "cart"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "include ",
+      "auto": true
+    }, {
+      "text": "one",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "chat",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and ",
+      "auto": true
+    }, {
+      "text": "2",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "boli",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " to the order",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "add ",
+      "auto": true
+    }, {
+      "text": "2",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "samosa",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": ", ",
+      "auto": true
+    }, {
+      "text": "1",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "lazzi",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and ",
+      "auto": true
+    }, {
+      "text": "one",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "french fries",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "order food items",
       "auto": true
     } ],

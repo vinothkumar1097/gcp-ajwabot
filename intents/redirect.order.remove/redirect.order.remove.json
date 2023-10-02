@@ -5,8 +5,12 @@
     "id": "snackitems",
     "entityType": "@snackitems",
     "isList": true
+  }, {
+    "id": "number",
+    "entityType": "@sys.number",
+    "isList": true
   } ],
   "priority": 500000,
   "description": "remove items from the order",
-  "numTrainingPhrases": 8
+  "numTrainingPhrases": 12
 }

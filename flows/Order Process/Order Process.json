@@ -1,17 +1,7 @@
 {
-  "name": "4a5751e4-9aa5-4abb-b1f3-53d7d4d31f9a",
-  "displayName": "Order Snacks",
+  "name": "cff775b3-16ba-4815-9b5c-5899078f4934",
+  "displayName": "Order Process",
   "transitionRoutes": [ {
-    "intent": "redirect.home",
-    "triggerFulfillment": {
-      "setParameterActions": [ {
-        "parameter": "restart",
-        "value": true
-      } ]
-    },
-    "targetPage": "End Flow",
-    "name": "4b7b0a16-1c4e-4de1-88a8-1ba88d438280"
-  }, {
     "intent": "redirect.end",
     "triggerFulfillment": {
       "messages": [ {
@@ -22,14 +12,24 @@
       } ]
     },
     "targetPage": "End Session",
-    "name": "88e54af2-21fc-48e3-b414-f8f8f223595a"
+    "name": "0acc7e46-5cd6-4447-b6cb-7d7582539520"
   }, {
-    "intent": "redirect.order.add",
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "back2flow",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "8d843102-82b8-40a0-a32d-67d18d335ac7"
+  }, {
+    "intent": "confirm.proceed.order",
     "triggerFulfillment": {
     
     },
-    "targetPage": "Order",
-    "name": "1b309a7f-f3e4-4a62-9a53-e0dcdcfe069a"
+    "targetPage": "Collect Info",
+    "name": "40430575-d7d3-4b58-b99f-2e3cb424ec11"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -41,7 +41,7 @@
         "languageCode": "en"
       } ]
     },
-    "name": "93c08113-1517-443c-9f6d-6929da01ade9"
+    "name": "5d52c51c-65b4-4024-8a22-d9d9bdbe0bbf"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -52,18 +52,10 @@
         "languageCode": "en"
       } ]
     },
-    "name": "17515ea3-f68b-4de5-9410-381913f4eec8"
+    "name": "018e4983-1890-4a51-a4ed-6e0cfe181da9"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_STANDARD",
-    "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "multiIntentSettings": {
-    
-    }
-  },
-  "advancedSettings": {
-    "enabled": true
-  },
-  "transitionRouteGroups": [ "FAQ.Snacks" ]
+    "classificationThreshold": 0.30000001
+  }
 }

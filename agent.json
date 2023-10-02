@@ -29,6 +29,21 @@
   "speakerIdSettings": {
   
   },
+  "customPayloadTemplates": [ {
+    "displayName": "main menu",
+    "payload": {
+      "richContent": [ {
+        "options": [ {
+          "text": "Order Snacks"
+        }, {
+          "text": "Track Order"
+        }, {
+          "text": "Cancel Order"
+        } ],
+        "type": "chips"
+      } ]
+    }
+  } ],
   "textToSpeechSettings": {
   
   },

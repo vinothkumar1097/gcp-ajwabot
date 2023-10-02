@@ -11,7 +11,7 @@
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "What snacks you want to order. we have samosa, lassi, chat, boli, laddu, lava cake, french fries. Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+              "text": [ "Say Something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
             },
             "languageCode": "en"
           } ]
@@ -80,13 +80,24 @@
       }
     } ]
   },
+  "entryFulfillment": {
+  
+  },
   "transitionRoutes": [ {
-    "condition": "$page.params.status = FINAL",
+    "condition": "$session.params.isCartValid = true",
     "triggerFulfillment": {
     
     },
     "targetPage": "Confirmation",
     "name": "7a62b14c-6cdf-49fe-b928-f1fdbc330333"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "Ajwa_Webhook",
+      "tag": "order.cart.validate"
+    },
+    "targetPage": "Order",
+    "name": "bc4c7d99-3653-4ee4-9df3-f71d7ee7c39c"
   } ],
   "transitionRouteGroups": [ "FAQ.Snacks" ]
 }

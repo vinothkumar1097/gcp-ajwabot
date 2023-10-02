@@ -40,13 +40,6 @@
     "targetPage": "End Session",
     "name": "d8951b1c-1ca3-4dfa-8212-b1c06b6c4a2b"
   }, {
-    "intent": "redirect.snacks.overview",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Order Snacks",
-    "name": "65d458d0-3458-4338-9df9-956aa87285be"
-  }, {
     "intent": "redirect.order.add",
     "triggerFulfillment": {
     
@@ -59,7 +52,7 @@
     
     },
     "targetFlow": "Order Snacks",
-    "name": "9d1fe515-9503-4b97-94b5-fc5a54a04c87"
+    "name": "0bfd8d33-4c96-4d8e-86c2-7a92d07cbe42"
   }, {
     "intent": "redirect.my.order.track",
     "triggerFulfillment": {
@@ -100,6 +93,42 @@
     },
     "targetPage": "End Flow",
     "name": "edbda960-8a05-4e99-b88c-c5cfdda790ff"
+  }, {
+    "intent": "faq.snacks.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Order Snacks",
+    "name": "72b726d6-6001-4fa0-8765-f131eef8a92a"
+  }, {
+    "condition": "$session.params.restart = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome back, as the virtual agent of Ajwa, I can help you order snacks, track your order status or cancel your order. How can I help?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "options": [ {
+              "text": "Order Snacks"
+            }, {
+              "text": "Track Order"
+            }, {
+              "text": "Cancel Order"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "restart",
+        "value": null
+      } ]
+    },
+    "name": "17f2b180-a79f-4b99-9c38-84ea81240f6e"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",

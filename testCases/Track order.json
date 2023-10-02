@@ -1,0 +1,112 @@
+{
+  "name": "8146c522-eff3-4db7-b4b4-55ddbbadd4fd",
+  "tags": [ "#track-order" ],
+  "displayName": "Track order",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "track order"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.my.order.track"
+      },
+      "currentPage": {
+        "name": "Track order",
+        "flow": "My Order"
+      },
+      "textResponses": [ {
+        "text": [ "What is your order number ? For example, ABC1234" ]
+      } ],
+      "currentFlow": {
+        "name": "My Order"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "ABC323"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Track order",
+        "flow": "My Order"
+      },
+      "textResponses": [ {
+        "text": [ "I missed that. Can you please share your order number again." ]
+      } ],
+      "currentFlow": {
+        "name": "My Order"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "ABC1234"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Anything Else",
+        "flow": "My Order"
+      },
+      "textResponses": [ {
+        "text": [ "let me check. please give me a moment." ]
+      }, {
+        "text": [ "Environment LOCAL. Your order id ABC1234 is out for delivery. It will reach you in 20 minutes." ]
+      }, {
+        "text": [ "Is there anything else ?" ]
+      } ],
+      "currentFlow": {
+        "name": "My Order"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.no"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "My Order"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for contacting Ajwa! Have a nice day!" ]
+      } ],
+      "currentFlow": {
+        "name": "My Order"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1696174131,
+    "nanos": 783018000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "name": "26899cc3-306c-4b9a-938a-3147649fd59b",
+  "tags": [ "#order,", "#multiple-snacks" ],
+  "displayName": "Order 2 samosa and 1 lassi",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome, I am the virtual agent of Ajwa. You can order snacks, track your order status or cancel your order. How can I help?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "what snacks do you offer"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.snacks.overview"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "We sell samosa, lassi, chat, boli, laddu, lava cake and french fries. Say something like \"I want two samosa and one lassi\". Make sure to specify a quantity for every snacks!" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "can i have 2 samosa and 1 lassi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.order.add"
+      },
+      "currentPage": {
+        "name": "Confirmation",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "samosa (2 * ₹10)\nlassi (1 * ₹25)\n\nTotal cart amount is 45 rupees. Shall I continue to order ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes proceed"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.proceed.order"
+      },
+      "currentPage": {
+        "name": "Collect Info",
+        "flow": "Order Process"
+      },
+      "textResponses": [ {
+        "text": [ "To complete your order, I need your name, mobile and address" ]
+      }, {
+        "text": [ "What's your name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Process"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "vinoth"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Info",
+        "flow": "Order Process"
+      },
+      "textResponses": [ {
+        "text": [ "what's your 10 digit mobile number" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Process"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "7200745516"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Info",
+        "flow": "Order Process"
+      },
+      "textResponses": [ {
+        "text": [ "what's your address" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Process"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "madhawaram chennai"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Info",
+        "flow": "Order Process"
+      },
+      "textResponses": [ {
+        "text": [ "I missed that. what's the address?" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Process"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "vyasarpadi market"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Payment details",
+        "flow": "Order Process"
+      },
+      "textResponses": [ {
+        "text": [ "Delivery costs an additional 30 rupees. This will make the total cost 75 rupees.\n\nYour order will be delivered to:\nvinoth\nvyasarpadi market\n\nTo continue the order process please explicitly say \"I confirm\". Do you want to confirm your order?" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Process"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes proceed"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.proceed.order"
+      },
+      "currentPage": {
+        "name": "Anything Else",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for your order!" ]
+      }, {
+        "text": [ "Here's the order number: ABC1032. You can pay at the time of delivery through gpay or cash. " ]
+      }, {
+        "text": [ "Is there anything else ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.no"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Order Snacks"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for contacting Ajwa! Have a nice day!" ]
+      } ],
+      "currentFlow": {
+        "name": "Order Snacks"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1696173933,
+    "nanos": 336546000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

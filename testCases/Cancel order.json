@@ -1,0 +1,91 @@
+{
+  "name": "6ce2d9f4-8992-4ce3-a1b3-fe91fae2534e",
+  "tags": [ "#cancel-order" ],
+  "displayName": "Cancel order",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "cancel my order abc2342"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.my.order.cancel"
+      },
+      "currentPage": {
+        "name": "Confirmation",
+        "flow": "My Order"
+      },
+      "textResponses": [ {
+        "text": [ "Are you sure you want to cancel your order #abc2342" ]
+      } ],
+      "currentFlow": {
+        "name": "My Order"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.yes"
+      },
+      "currentPage": {
+        "name": "Anything Else",
+        "flow": "My Order"
+      },
+      "textResponses": [ {
+        "text": [ "I have cancelled your order." ]
+      }, {
+        "text": [ "Is there anything else ?" ]
+      } ],
+      "currentFlow": {
+        "name": "My Order"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirm.no"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "My Order"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for contacting Ajwa! Have a nice day!" ]
+      } ],
+      "currentFlow": {
+        "name": "My Order"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1696174556,
+    "nanos": 322779000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

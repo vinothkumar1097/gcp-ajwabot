@@ -17,6 +17,24 @@
     }, {
       "parameter": "quantity",
       "value": null
+    }, {
+      "parameter": "name",
+      "value": null
+    }, {
+      "parameter": "address",
+      "value": null
+    }, {
+      "parameter": "mobile",
+      "value": null
+    }, {
+      "parameter": "cart_amount",
+      "value": null
+    }, {
+      "parameter": "back2flow",
+      "value": null
+    }, {
+      "parameter": "isCartValid",
+      "value": null
     } ]
   },
   "transitionRoutes": [ {
