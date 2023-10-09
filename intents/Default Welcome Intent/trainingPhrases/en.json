@@ -1,5 +1,41 @@
 {
   "trainingPhrases": [ {
+    "parts": [ {
+      "text": "hi myself "
+    }, {
+      "text": "kumar"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hello this is "
+    }, {
+      "text": "Jackson"
+    }, {
+      "text": " here"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hello im "
+    }, {
+      "text": "jack"
+    }, {
+      "text": " here"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "hi this is "
+    }, {
+      "text": "vinod"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
     "id": "291ec381-2528-4263-a1fe-305dbc46b33c",
     "parts": [ {
       "text": "just going to say hi",

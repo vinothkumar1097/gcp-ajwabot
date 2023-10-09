@@ -4,6 +4,56 @@
       "text": "order ",
       "auto": true
     }, {
+      "text": "boli",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and ",
+      "auto": true
+    }, {
+      "text": "two",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "samosa",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "order ",
+      "auto": true
+    }, {
+      "text": "lassi",
+      "parameterId": "snackitems",
+      "auto": true
+    }, {
+      "text": " and ",
+      "auto": true
+    }, {
+      "text": "2",
+      "parameterId": "quantity",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "fries",
+      "parameterId": "snackitems",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "order ",
+      "auto": true
+    }, {
       "text": "1",
       "parameterId": "quantity",
       "auto": true

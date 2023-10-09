@@ -47,13 +47,6 @@
     "targetFlow": "Order Snacks",
     "name": "c090f9b6-8757-4efe-bdc4-a6904500c12a"
   }, {
-    "intent": "redirect.order.remove",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Order Snacks",
-    "name": "0bfd8d33-4c96-4d8e-86c2-7a92d07cbe42"
-  }, {
     "intent": "redirect.my.order.track",
     "triggerFulfillment": {
     

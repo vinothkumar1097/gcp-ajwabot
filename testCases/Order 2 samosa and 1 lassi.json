@@ -77,7 +77,7 @@
         "flow": "Order Snacks"
       },
       "textResponses": [ {
-        "text": [ "samosa (2 * ₹10)\nlassi (1 * ₹25)\n\nTotal cart amount is 45 rupees. Shall I continue to order ?" ]
+        "text": [ "samosa (2 * ₹10)\nlassi (1 * ₹25)\n\nYour total cart amount is 45 rupees. Shall I continue to order?" ]
       } ],
       "currentFlow": {
         "name": "Order Snacks"
